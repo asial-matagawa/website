@@ -299,7 +299,7 @@ body.pricing article.main {
                 width: 502px;
             }
             @media screen and (max-width: $break-xs) {
-                width: 360px;
+                width: 90%;
                 margin-right: auto;
                 margin-left: auto;
             }
@@ -317,7 +317,7 @@ body.pricing article.main {
                     margin-left: auto;
                 }
                 @media screen and (max-width: $break) {
-                    width: 100%;
+                    width: 48%;
                 }
                 &:nth-child(1) {
                     margin-right: 60px;
@@ -347,7 +347,7 @@ body.pricing article.main {
                 width: 502px;
             }
             @media screen and (max-width: $break-xs) {
-                width: 360px;
+                width: 90%;
             }
             h2 {
                 font-size: 18px;
@@ -418,6 +418,9 @@ body.pricing article.main {
                     padding: 0;
                     width: 175px;
                     display: inline-block;
+                    @media screen and (max-width: $break-xs) {
+                        width: 100%;
+                    }
                     a {
                         min-width: 175px;
                         height: 38px;
@@ -427,6 +430,10 @@ body.pricing article.main {
                         @media screen and (max-width: 1070px) {
                             margin: 0;
                         }
+                         @media screen and (max-width: $break-xs) {
+                            width: 100%;
+                            display: block;
+                         }
                     }
                 }
             }

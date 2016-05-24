@@ -12,7 +12,6 @@ body.headline {
             padding-right: 20px;
             @media screen and (max-width: 972px) {
                 width: 100%;
-                min-width: 380px;
                 margin-top: 0;
             }
             > p {
@@ -99,7 +98,7 @@ body.headline {
                                 margin-left: 70px;
                                 @media screen and (max-width: $break) {
                                     margin-left: 0;
-                                    
+
                                 }
                             }
                             > .headline-entry-comment-news {
@@ -238,7 +237,7 @@ body.headline {
                 height: 50px;
                 border-bottom: 1px solid #ccc;
                 margin-bottom: 50px;
-                &.attension { 
+                &.attension {
                     margin-bottom: 10px;
                 }
                 & > li {
@@ -255,7 +254,7 @@ body.headline {
                     margin-top: 0px;
                     border-bottom: 1px solid #ccc;
                     @media screen and (max-width: $break) {
-                        width: 190px;
+                        width: 46%;
                     }
                     &:first-child {
                         border-radius: 4px 0 0 0;
@@ -274,7 +273,7 @@ body.headline {
                         margin-top: -4px;
                         > a {
                             color: #0062b2;
-                        } 
+                        }
                     }
                     &.attension > a {
                         color: #d40004;

@@ -36,7 +36,7 @@ body.localkit {
             @media screen and (max-width: $break) {
                 text-align: center;
                 margin-bottom: 20px;
-                
+
             }
             @media screen and (max-width: $break-xs) {
                 text-align: center;
@@ -69,7 +69,8 @@ body.localkit {
                     margin-bottom: 10px;
                 }
                 @media screen and (max-width: $break-xs) {
-                    width: 100%;
+                    width: 98%;
+                    font-size: 20px;
                     margin-bottom: 10px;
                 }
                 &:first-child {
@@ -144,7 +145,7 @@ body.localkit {
             @media screen and (max-width: $break-xs) {
                 padding: 50px 3% 30px;
                 font-size: 16px;
-            }              
+            }
             .btn {
                 padding: 12px 40px 0;
                 min-width: 210px;
