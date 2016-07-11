@@ -3,7 +3,15 @@ body.academic {
     a > img:hover {
       opacity: 0.7;
     }
+    .ml {
+      margin-left: -10px;
+    }
     @media screen and (max-width: $break-xl) {
+      .xl-br {
+        display: none;
+      }
+    }
+    @media screen and (max-width: $break) {
       .sp-br {
         display: none;
       }
@@ -53,12 +61,14 @@ body.academic {
           margin: 0 auto;
           width: 930px;
           @media screen and (max-width: $break-xl) {
+            padding: 4% 0 0;
+            margin: 0 auto;
+            width: 760px;
+            box-sizing: border-box;
+          }
+          @media screen and (max-width: $break) {
             padding: 4% 5% 0;
             width: 100%;
-            box-sizing: border-box;
-            .ml {
-              margin-left: -2%;
-            }
           }
           h1 {
             margin: 80px 0 10px 68px;
@@ -96,9 +106,11 @@ body.academic {
           margin: -80px 0 0 350px;
           width: 470px;
           @media screen and (max-width: $break-xl) {
-            margin: 0 auto 5%;
+            margin: -140px 0 30px 0;
+            float: right;
           }
           @media screen and (max-width: $break) {
+            float: none;
             margin: 0 auto 5%;
             width: 300px;
             display: block;
@@ -111,8 +123,8 @@ body.academic {
           left: 50%;
           margin-left: -405px;
           @media screen and (max-width: $break-xl) {
-            margin: 0 0 10%;
-            position: static;
+            margin-left: -378px;
+            top: 310px;
           }
           @media screen and (max-width: $break) {
             margin: 0 0 10%;
@@ -152,7 +164,13 @@ body.academic {
           padding: 38px 25px 10px;
           border-bottom: 1px solid #ddd;
           @media screen and (max-width: $break-xl) {
+            margin: 0 auto;
+            max-width: 900px;
             padding: 5% 0 2%;
+            box-sizing: border-box;
+          }
+          @media screen and (max-width: $break) {
+            width: 100%;
           }
           li {
             display: inline-block;
@@ -163,17 +181,20 @@ body.academic {
             @media screen and (max-width: $break-xl) {
               margin: 0 2% 2%;
               img {
-                width: 140px;
+                width: 170px;
                 vertical-align: middle;
               }
               &:first-child {
-                width: 50px;
+                width: 70px;
               }
               &:nth-child(3) {
-                width: 100px;
+                width: 120px;
               }
               &:nth-child(5) {
-                width: 50px;
+                width: 70px;
+              }
+              &:nth-child(6) {
+                width: 200px;
               }
             }
             @media screen and (max-width: $break) {
@@ -190,6 +211,9 @@ body.academic {
               &:nth-child(5) {
                 width: 32px;
               }
+              &:nth-child(6) {
+                width: 80px;
+              }
             }
             &:nth-child(5) {
               margin-right: 0;
@@ -201,7 +225,9 @@ body.academic {
         }
         .features {
           @media screen and (max-width: $break-xl) {
+            margin: 0 auto;
             width: 100%;
+            max-width: 960px;
           }
         }
         .features li {
@@ -217,6 +243,11 @@ body.academic {
           -o-box-sizing: border-box;
           box-sizing: border-box;
           @media screen and (max-width: $break-xl) {
+            width: auto;
+            max-width: 813px;
+            box-sizing: border-box;
+          }
+          @media screen and (max-width: $break) {
             width: 100%;
             box-sizing: border-box;
           }
@@ -265,7 +296,7 @@ body.academic {
             display: table-cell;
             vertical-align: middle;
             max-width: 387px;
-            @media screen and (max-width: $break-xl) {
+            @media screen and (max-width: $break) {
               display: block;
               max-width: 100%;
             }
@@ -279,7 +310,7 @@ body.academic {
           .feature-cont p {
             margin: 0;
             font-size: 13px;
-            @media screen and (max-width: $break-xl) {
+            @media screen and (max-width: $break) {
               margin: 0 0 10%;
               padding: 0;
               max-width: 100%;
@@ -287,7 +318,7 @@ body.academic {
           }
           .right-side {
             float: right;
-            @media screen and (max-width: $break-xl) {
+            @media screen and (max-width: $break) {
               float: none;
               display: block;
             }
@@ -296,12 +327,15 @@ body.academic {
             float: left;
             @media screen and (max-width: $break-xl) {
               float: none;
+            }
+            @media screen and (max-width: $break) {
+              float: none;
               display: block;
             }
           }
           .feature-cont.cont04 {
             width: 410px;
-            @media screen and (max-width: $break-xl) {
+            @media screen and (max-width: $break) {
               width: 100%;
               p {
                 max-width: 100%;
@@ -311,7 +345,7 @@ body.academic {
 
           &.imgleft .feature-cont {
             width: 370px;
-            @media screen and (max-width: $break-xl) {
+            @media screen and (max-width: $break) {
               width: 100%;
             }
           }
@@ -321,23 +355,18 @@ body.academic {
             vertical-align: middle;
             text-align: left;
             @media screen and (max-width: $break-xl) {
+              img {
+                margin: 0 auto;
+                width: 90%;
+                display: block;
+              }
+            }
+            @media screen and (max-width: $break) {
               display: block;
               img {
                 margin: 0 auto;
                 width: auto;
                 display: block;
-              }
-             @media screen and (max-width: $break) {
-                margin: 0 auto;
-                display: block;
-                width: 90%;
-             }
-            }
-            @media screen and (max-width: $break) {
-              display: block;
-              img {
-              margin: 0 auto;
-              display: block;
               }
             }
           }
@@ -355,12 +384,18 @@ body.academic {
           margin: 0 auto 10%;
           box-sizing: border-box;
           width: 90%;
+          max-width: 933px;
+        }
+        @media screen and (max-width: $break) {
+          margin: 0 auto 10%;
+          box-sizing: border-box;
+          width: 90%;
         }
         .ribbon {
           line-height: 0;
           margin-left: -7px;
           margin-bottom: 38px;
-          @media screen and (max-width: $break-xl) {
+          @media screen and (max-width: $break) {
             margin-bottom: 5%;
           }
         }
@@ -374,6 +409,11 @@ body.academic {
             box-sizing: border-box;
             width: 90%;
           }
+          @media screen and (max-width: $break) {
+            margin: 0 5% 8%;
+            box-sizing: border-box;
+            width: 90%;
+          }
           .portrat {
             float: left;
             width: 86px;
@@ -381,7 +421,7 @@ body.academic {
             overflow: hidden;
             border: 8px solid #f7f7f7;
             border-radius: 50px;
-            @media screen and (max-width: $break-xl) {
+            @media screen and (max-width: $break) {
               margin: 0 auto 5%;
               float: none;
             }
@@ -389,7 +429,7 @@ body.academic {
           .showcase-text {
             line-height: 1.4;
             margin-left: 120px;
-            @media screen and (max-width: $break-xl) {
+            @media screen and (max-width: $break) {
               margin: 0;
             }
             .name {
@@ -407,6 +447,10 @@ body.academic {
           margin-left: 71px;
           margin-top: 20px;
           margin-bottom: 20px;
+          @media screen and (max-width: $break-xl) {
+            margin: 0 auto 20px;
+            width: 632px;
+          }
           @media screen and (max-width: $break) {
             padding: 0 0% 7% 4%;
             margin: 0;
