@@ -6,6 +6,9 @@ body.academic {
     .ml {
       margin-left: -10px;
     }
+    .main {
+      margin-top: -20px;
+    }
     @media screen and (max-width: $break-xl) {
       .xl-br {
         display: none;
@@ -159,6 +162,11 @@ body.academic {
         width: 932px;
         @media screen and (max-width: $break-xl) {
           width: 100%;
+          box-sizing: border-box;
+        }
+        @media screen and (max-width: $break) {
+            width: 100%;
+            box-sizing: border-box;
         }
         .intro-logo {
           text-align: center;
@@ -455,6 +463,7 @@ body.academic {
           @media screen and (max-width: $break) {
             padding: 0 0% 7% 4%;
             margin: 0;
+            width: 100%;
           }
           li {
             list-style: none;
