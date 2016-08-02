@@ -19,6 +19,16 @@ body.academic {
         display: none;
       }
     }
+    @media screen and (max-width: $break-lg) {
+      .sp-br {
+        display: block;
+      }
+    }
+    @media screen and (max-width: $break-xs) {
+      .sp-br {
+        display: none;
+      }
+    }
     header {
       background-color: #222;
       border-bottom: 1px solid #080808;
@@ -74,11 +84,21 @@ body.academic {
             padding: 4% 5% 0;
             width: 100%;
           }
+          @media screen and (max-width: $break-lg) {
+            padding: 20px 0 0;
+            margin: 0 auto;
+            width: 930px;
+          }
+          @media screen and (max-width: $break-xs) {
+            padding: 4% 5% 0;
+            width: 100%;
+          }
+
           h1 {
             margin: 0 0 10px 68px;
             text-align: left;
-            font-size: 46px;
-            line-height: 1.3;
+            font-size: 40px;
+            line-height: 1.2;
             @media screen and (max-width: $break-xl) {
               margin: 0 0 2%;
             }
@@ -86,11 +106,21 @@ body.academic {
               margin: 0 0 4%;
               font-size: 30px;
             }
+            @media screen and (max-width: $break-lg) {
+              margin: 0 0 10px 68px;
+              text-align: left;
+              font-size: 40px;
+              line-height: 1.2;
+            }
+            @media screen and (max-width: $break-xs) {
+              margin: 0 0 4%;
+              font-size: 30px;
+            }
         }
           p {
             margin: 0 0 0 68px;
             text-align: left;
-            font-size: 17px;
+            font-size: 16px;
             line-height: 1.5;
             max-width: 100%;
             @media screen and (max-width: $break-xl) {
@@ -104,6 +134,18 @@ body.academic {
             }
             @media screen and (max-width: $break-xl) {
               margin-bottom: 8%;
+            }
+            @media screen and (max-width: $break-lg) {
+              margin: 0 0 0 68px;
+              text-align: left;
+              font-size: 16px;
+              line-height: 1.5;
+              max-width: 100%;
+            }
+            @media screen and (max-width: $break-xs) {
+              padding: 0;
+              margin: 0 0 5%;
+              font-size: 13px;
             }
         }
         .key-image {
@@ -119,6 +161,12 @@ body.academic {
             width: 300px;
             display: block;
           }
+          @media screen and (max-width: $break-lg) {
+            width: 370px;
+          }
+          @media screen and (max-width: $break-xs) {
+            width: 300px;
+          }
         }
         .box-try {
           padding: 0;
@@ -131,6 +179,18 @@ body.academic {
             top: 310px;
           }
           @media screen and (max-width: $break) {
+            margin: 0 0 10%;
+            position: static;
+          }
+          @media screen and (max-width: $break-lg) {
+            margin-left: -310px;
+            top: 230px;
+            left: 50%;
+            position: absolute;
+          }
+          @media screen and (max-width: $break-xs) {
+            margin-left: -378px;
+            top: 310px;
             margin: 0 0 10%;
             position: static;
           }
@@ -208,6 +268,41 @@ body.academic {
             }
             @media screen and (max-width: $break) {
               margin: 0 2% 2%;
+              img {
+                width: 80px;
+              }
+              &:first-child {
+                width: 32px;
+              }
+              &:nth-child(3) {
+                width: 50px;
+              }
+              &:nth-child(5) {
+                width: 32px;
+              }
+              &:nth-child(6) {
+                width: 80px;
+              }
+            }
+            @media screen and (max-width: $break-lg) {
+              margin: 0 2% 2%;
+              img {
+                width: 120px;
+              }
+              &:first-child {
+                width: 60px;
+              }
+              &:nth-child(3) {
+                width: 110px;
+              }
+              &:nth-child(5) {
+                width: 50px;
+              }
+              &:nth-child(6) {
+                width: 120px;
+              }
+            }
+            @media screen and (max-width: $break-xs) {
               img {
                 width: 80px;
               }
@@ -369,6 +464,12 @@ body.academic {
                 width: 90%;
                 display: block;
               }
+              .beginer {
+                margin: 0 auto 0 4%;
+              }
+              .comfirm {
+                margin: 0 auto 0 8%;
+              }
             }
             @media screen and (max-width: $break) {
               display: block;
@@ -431,8 +532,19 @@ body.academic {
             border: 8px solid #f7f7f7;
             border-radius: 50px;
             @media screen and (max-width: $break) {
-              margin: 0 auto 5%;
+              margin: 2% auto 10%;
+              width: 120px;
+              height: 120px;
+              border-radius: 70px;
               float: none;
+              border: 10px solid #f7f7f7;
+              img {
+                width: 100%;
+              }
+              .izawa {
+                width: 110%;
+                max-width: 110%;
+              }
             }
           }
           .showcase-text {
