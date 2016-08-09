@@ -245,6 +245,14 @@ article.main > div#modal-overlay {
                     margin: 0 auto 40px;
                     height: auto;
                 }
+                a {
+                    p:nth-of-type(1) {
+                        cursor: pointer;
+                    }
+                }
+                figure {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -273,10 +281,14 @@ article.main > div#modal-overlay {
             position: relative;
             img {
                 vertical-align: bottom;
+                cursor: pointer;
             }
         }
         a {
             text-decoration: none;
+            p:nth-of-type(1) {
+                cursor: pointer;
+            }
         }
         a > p {
             margin-top: 10px;
@@ -345,7 +357,7 @@ article.cases {
     display: none;
     font-size: 13px;
     width: 702px;
-    padding: 35px 40px 40px 40px;
+    padding: 35px 0 40px 0;
     background-color: #fff;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
@@ -396,6 +408,8 @@ article.cases {
         border-radius: 2px;
         box-sizing: border-box;
         padding: 20px;
+        width: 620px;
+        margin: 0 auto;
         .arrow {
             display: block;
             position: absolute;
@@ -440,7 +454,7 @@ article.cases {
         background: url(/img/great-apps/signup_popup_close.png) no-repeat right top;
         position: absolute;
         top: -20px;
-        right: -25px;
+        right: 15px;
         width: 18px;
         height: 18px;
         opacity: .6;
@@ -461,8 +475,8 @@ article.cases {
         background-color: white;
         border-bottom: 1px solid #ddd;
         box-sizing: border-box;
-        margin: 0 0 25px 0;
-        padding: 0 0 13px 67px;
+        margin: 0 auto 25px auto;
+        padding: 0 40px 30px 107px;
         text-align: left;
         position: relative;
         z-index: 5;
@@ -497,7 +511,7 @@ article.cases {
         h2 {
             font-size: 24px;
             text-align: left;
-            padding: 4px 0 0 0;
+            padding: 8px 0 0 0;
             margin: 0 0 1px 0;
             font-weight: bold;
             @media screen and (max-width: $break) {
@@ -514,13 +528,17 @@ article.cases {
         .headicon {
             position: absolute;
             top: 0;
-            left: 0;
+            left: 40px;
             width: 60px;
             height: 60px;
         }
     }
+    .desc-body {
+        height: 500px;
+        overflow-y: scroll;
+    }
     .desc-block {
-        padding: 0 0 0 10px;
+        padding: 0 40px 0 50px;
         margin: 0;
         .desc {
             white-space: pre-line;
