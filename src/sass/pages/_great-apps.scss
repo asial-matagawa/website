@@ -364,6 +364,7 @@ article.cases {
     margin: auto;
     margin-bottom: 60px;
     z-index: 101;
+    overflow-y: scroll;
 
     &:after {
         content: ".";
@@ -532,10 +533,6 @@ article.cases {
             width: 60px;
             height: 60px;
         }
-    }
-    .desc-body {
-        height: 430px;
-        overflow-y: scroll;
     }
     .desc-block {
         padding: 0 40px 0 50px;

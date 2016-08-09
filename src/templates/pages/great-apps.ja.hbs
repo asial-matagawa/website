@@ -4,6 +4,14 @@ class: great-apps
 description: アプリ事例 - クラウド上のアプリ開発環境。iOS/Android/Windows向けHTML5ハイブリッドアプリに対応。
 ---
 <section id="case">
+<script>
+var WindowHeight = $(window).height();
+$(function(){
+    if(WindowHeight > 300){
+        $('#app-detail-container').css('height','90%');
+    }
+});
+</script>
     <div class="case-featured">
         <div>
             <h1>Monaca <i>x</i> Onsen UI Showcase</h1>
